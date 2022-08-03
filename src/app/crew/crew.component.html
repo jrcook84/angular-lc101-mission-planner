@@ -1,6 +1,5 @@
 <h3>Crew</h3>
 <ul>
-  <li>Jessica Watkins</li>
-  <li>Raja Chari</li>
-  <li>Jasmin Moghbeli</li>
+  <li *ngFor=" let astronaut of crew">{{ astronaut.name }}<span *ngIf="astronaut.firstMission"> -1st</span>
+  </li>
 </ul>
